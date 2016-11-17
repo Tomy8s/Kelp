@@ -34,4 +34,21 @@ feature 'User can sign in and out' do
       expect(page).not_to have_link 'Sign up'
     end
   end
+
+  context 'User is not signed in' do
+    before { Restaurant.create( name: 'KFC') }
+
+    scenario 'user tries to create a restaurant not logged in' do
+      visit '/'
+      click_link 'Add a restaurant'
+      expect(page).to have_content 'Log in'
+      expect(current_path).to be '/users/sign_in'
+    end
+
+    scenario 'user tries to delete restaurant' do
+      visit '/'
+      expect(page).not_to have_link 'Delete KFC'
+    end
+
+  end
 end

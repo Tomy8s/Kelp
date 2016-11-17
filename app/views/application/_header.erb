@@ -2,7 +2,9 @@
   <%= link_to "Sign in", new_user_session_path %>
   <%= link_to "Sign up", new_user_registration_path %>
 <% else %>
-  <%= image_tag current_user.image %>
+  <% if current_user.image %>
+    <%= image_tag current_user.image %>
+  <% end %>
   <%= link_to "Sign out", destroy_user_session_path, method: :delete %>
 <% end %>
 <%= notice %>
