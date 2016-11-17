@@ -16,4 +16,5 @@ class Restaurant < ApplicationRecord
   def update_rating
     self.update(rating: calculate_average_rating)
   end
+  
 end

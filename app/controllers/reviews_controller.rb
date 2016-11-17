@@ -44,6 +44,7 @@ class ReviewsController < ApplicationController
 
 	def destroy
 	 review = Review.find(params[:id])
+   @restaurant = review.restaurant
 		if review.user == current_user
 			review.destroy
 			@restaurant.update_rating

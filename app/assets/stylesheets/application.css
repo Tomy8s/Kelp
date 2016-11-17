@@ -13,3 +13,37 @@
  *= require_tree .
  *= require_self
  */
+*{
+  font-family: 'Arimo', sans-serif;
+}
+
+body{
+ background-color: yellow;
+}
+
+header{
+  height: 80px;
+  display: absolute;
+  border-bottom: solid;
+  border-color: black;
+  border-width: 3px;
+}
+
+header h1{
+  width: 48%;
+  float: left;
+}
+
+header #user-actions{
+  width: 48%;
+  float: right;
+  text-align: right;
+}
+
+.review{
+  margin: auto;
+}
+
+small{
+  font-size: 13px;
+}

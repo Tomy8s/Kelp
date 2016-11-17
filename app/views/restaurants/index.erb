@@ -4,7 +4,7 @@
 			<% if restaurant.rating %>
 				<%= restaurant.rating.to_s[-1] == '0' ? restaurant.rating.to_i : restaurant.rating %>/5
 			<% else %>
-				<samll>Not yet rated</samll>
+				<small>Not yet rated</small>
 			<% end %>
 		</h2>
 	<%end%>
