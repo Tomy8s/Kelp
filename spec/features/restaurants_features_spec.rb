@@ -12,7 +12,6 @@ feature 'restaurants' do
 
 	context 'restaurants have been added' do
 		before do
-			sign_in
 			add_restaurant_and_return
 		end
 
@@ -37,7 +36,6 @@ feature 'restaurants' do
 
 	context 'displaying an individual restaurant' do
 		before do
-			sign_in
 			add_restaurant_and_return
 		end
 		scenario 'lets the user view a restaurant' do
@@ -50,7 +48,6 @@ feature 'restaurants' do
 
 	context 'user add description to restaurant' do
 		scenario 'user adds a new restaurant and description' do
-			sign_in
 			add_restaurant_and_return
 			click_link 'My restaurant'
 			expect(page).to have_content 'A great place to eat'
@@ -59,7 +56,6 @@ feature 'restaurants' do
 
 	context 'editing a restaurant' do
 		before do
-			sign_in
 			add_restaurant_and_return
 		end
 		scenario 'lets user edit restuarant' do
@@ -74,19 +70,24 @@ feature 'restaurants' do
 	end
 
 	context 'deleting a restaurant' do
-		scenario 'user deletes a restaurant' do
-			sign_in
+		scenario 'user deletes their own restaurant' do
 			visit_my_restaurant
 			click_link 'Delete'
 			expect(page).to have_content 'My restaurant has been deleted'
+		end
+
+		scenario 'user can\'t delete othre\'s restaurant' do
+			visit_my_restaurant
 		end
 	end
 
 	context 'not allowing the same name' do
     scenario 'user adds a restaurant with an existing name' do
-			sign_in
       add_restaurant_and_return
-      add_restaurant_and_return
+			click_link 'Add a restaurant'
+			fill_in :name, with: 'My restaurant'
+			fill_in :description, with: 'A great place to eat'
+			click_button 'Add Restaurant'
       expect(page).to have_content 'Name has already been taken'
     end
 	end

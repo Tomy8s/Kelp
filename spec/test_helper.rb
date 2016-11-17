@@ -7,7 +7,7 @@ def sign_in
 end
 
 def add_restaurant_and_return
-  visit '/restaurants'
+  sign_in
   click_link 'Add a restaurant'
   fill_in :name, with: 'My restaurant'
   fill_in :description, with: 'A great place to eat'
