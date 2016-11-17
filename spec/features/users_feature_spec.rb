@@ -47,7 +47,8 @@ feature 'User can sign in and out' do
 
     scenario 'user tries to delete restaurant' do
       visit '/'
-      expect(page).not_to have_link 'Delete KFC'
+      click_link 'KFC'
+      expect(page).not_to have_link 'Delete'
     end
 
   end
