@@ -1,6 +1,10 @@
 <h1><%= @restaurant.name %></h1>
 <p><%= @restaurant.description %></p>
-<p>Rating: <%= @restaurant.rating %>/5</p>
+<p><% if @restaurant.rating %>
+  Rating: <%= @restaurant.rating.to_s[-1] == '0' ? @restaurant.rating.to_i : @restaurant.rating %>/5
+<% else %>
+  Not yet rated
+<% end %></p>
 <% @reviews.each do |r| %>
   <div class="review">
     <p>Rated <%= r.rating %>/5</p>

@@ -9,6 +9,7 @@ class ReviewsController < ApplicationController
     @restaurant = Restaurant.find(params[:restaurant_id])
     @review = @restaurant.build_review(review_params, current_user)
     if @review.save
+			@restaurant.update_rating
       redirect_to restaurant_path(params[:restaurant_id])
     else
       if @review.errors[:user]
@@ -32,6 +33,7 @@ class ReviewsController < ApplicationController
     @restaurant = @review.restaurant
 		if @review.user == current_user
 		  @review.update(review_params)
+			@restaurant.update_rating
 			flash[:notice] = "#{@restaurant.name} has been updated"
 		else
 			flash[:notice] = "You do not have permission to edit this restaurant"
@@ -44,6 +46,7 @@ class ReviewsController < ApplicationController
 	 review = Review.find(params[:id])
 		if review.user == current_user
 			review.destroy
+			@restaurant.update_rating
 			flash[:notice] = "Your review has been deleted"
 		else
 			flash[:notice] = "You do not have permission to delete this review"

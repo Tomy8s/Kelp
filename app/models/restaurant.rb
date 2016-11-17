@@ -9,4 +9,11 @@ class Restaurant < ApplicationRecord
     reviews.new(attributes)
   end
 
+  def calculate_average_rating
+    self.reviews.average(:rating).to_f.round(1)
+  end
+
+  def update_rating
+    self.update(rating: calculate_average_rating)
+  end
 end

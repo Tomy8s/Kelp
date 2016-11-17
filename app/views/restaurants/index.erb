@@ -1,6 +1,12 @@
 <% if @restaurants.any? %>
 	<% @restaurants.each do |restaurant| %>
-		<h2><%= link_to restaurant.name, restaurant_path(restaurant) %> <%=restaurant.rating%>/5</h2>
+		<h2><%= link_to restaurant.name, restaurant_path(restaurant) %>
+			<% if restaurant.rating %>
+				<%= restaurant.rating.to_s[-1] == '0' ? restaurant.rating.to_i : restaurant.rating %>/5
+			<% else %>
+				<samll>Not yet rated</samll>
+			<% end %>
+		</h2>
 	<%end%>
 <% else %>
 <h1>No restaurants yet</h1>

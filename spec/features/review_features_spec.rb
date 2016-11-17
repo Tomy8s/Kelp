@@ -17,8 +17,8 @@ feature "Reviews" do
    leave_review(5)
    click_link 'Sign out'
    sign_in('test2@test.com')
-   leave_review(1)
-   expect(page).to have_content('Rating: 3/5')
+   leave_review(4)
+   expect(page).to have_content('Rating: 4.5/5')
   end
 
 end
