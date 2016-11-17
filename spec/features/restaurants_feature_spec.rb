@@ -32,6 +32,12 @@ feature 'restaurants' do
       expect(current_path).to eq '/restaurants'
     end
 
+    scenario 'users must be signed in to create a restaurant' do
+      visit '/'
+      click_link 'Add a restaurant'
+      expect(page).to have_content 'You need to sign in or sign up before continuing.'
+    end
+
     context 'an invalid restaurant' do
       scenario 'does no let you submit a name that is too short' do
         sign_in
@@ -70,6 +76,12 @@ feature 'restaurants' do
       expect(page).to have_content 'grilled cat'
       expect(current_path).to eq '/restaurants'
     end
+
+    scenario 'users must be signed in to edit a restaurant' do
+      visit '/'
+      click_link 'Edit Nandos'
+      expect(page).to have_content 'You need to sign in or sign up before continuing.'
+    end
   end
 
   context 'deleting restaurants' do
@@ -79,6 +91,12 @@ feature 'restaurants' do
       click_link 'Delete KFC'
       expect(page).not_to have_content 'KFC'
       expect(page).to have_content 'Restaurant deleted successfully'
+    end
+
+    scenario 'users must be signed in to delete a restaurant' do
+      visit '/'
+      click_link 'Delete KFC'
+      expect(page).to have_content 'You need to sign in or sign up before continuing.'
     end
   end
 
