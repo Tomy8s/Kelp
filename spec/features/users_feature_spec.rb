@@ -31,7 +31,6 @@ feature 'User can sign in and out' do
   end
 
   context 'User is not signed in' do
-    before { Restaurant.create( name: 'KFC') }
 
     scenario 'user tries to create a restaurant not logged in' do
       visit '/'
@@ -41,10 +40,12 @@ feature 'User can sign in and out' do
     end
 
     scenario 'user tries to delete restaurant' do
+      sign_in
+      add_restaurant_and_return
+      click_link('Sign out')
       visit '/'
-      click_link 'KFC'
+      click_link 'My restaurant'
       expect(page).not_to have_link 'Delete'
     end
-
   end
 end

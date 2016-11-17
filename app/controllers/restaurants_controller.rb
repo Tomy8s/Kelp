@@ -10,7 +10,6 @@ class RestaurantsController < ApplicationController
 
 	def create
 		@restaurant = current_user.build_restaurant(restaurant_params, current_user)
-		p restaurant_params
 		if @restaurant.save
 			redirect_to restaurants_path
 		else

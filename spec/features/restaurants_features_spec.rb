@@ -12,12 +12,13 @@ feature 'restaurants' do
 
 	context 'restaurants have been added' do
 		before do
-			Restaurant.create(name: 'Tratoria Populare')
+			sign_in
+			add_restaurant_and_return
 		end
 
 		scenario 'display restaurant' do
 			visit '/restaurants'
-			expect(page).to have_content 'Tratoria Populare'
+			expect(page).to have_content 'My restaurant'
 			expect(page).not_to have_content 'No restaurants yet'
 		end
 	end
@@ -35,12 +36,15 @@ feature 'restaurants' do
 	end
 
 	context 'displaying an individual restaurant' do
-		let!(:trat){Restaurant.create(name: 'Tratoria Populare')}
+		before do
+			sign_in
+			add_restaurant_and_return
+		end
 		scenario 'lets the user view a restaurant' do
 			visit '/restaurants'
-			click_link 'Tratoria Populare'
-			expect(page).to have_content 'Tratoria Populare'
-			expect(current_path).to eq "/restaurants/#{trat.id}"
+			click_link 'My restaurant'
+			expect(page).to have_content 'My restaurant'
+			expect(current_path).to eq "/restaurants/#{Restaurant.last.id}"
 		end
 	end
 
@@ -54,16 +58,18 @@ feature 'restaurants' do
 	end
 
 	context 'editing a restaurant' do
-		let!(:trat){Restaurant.create(name: 'Tratoria Populare')}
-		scenario 'lets user edit restuarant' do
+		before do
 			sign_in
+			add_restaurant_and_return
+		end
+		scenario 'lets user edit restuarant' do
 			visit '/restaurants'
-			click_link 'Tratoria Populare'
+			click_link 'My restaurant'
 			click_link 'Edit'
 			fill_in :name, with: 'trat'
 			click_button 'Update Restaurant'
 			expect(page).to have_content 'trat'
-			expect(page).not_to have_content 'Tratoria Populare'
+			expect(page).not_to have_content 'My restaurant'
 		end
 	end
 
