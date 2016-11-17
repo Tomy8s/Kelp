@@ -23,7 +23,7 @@ RSpec.describe Restaurant, type: :model do
       let(:restaurant) {Restaurant.create name: 'KFC'}
       let(:review_params) { { rating: 5, comments: 'crap'} }
 
-      subject(:review) { restaurant.review.build_with_user(review_params, user) }
+      subject(:review) { restaurant.reviews.build_with_user(review_params, user) }
 
       it 'builds a review' do
         expect(review).to be_a Review

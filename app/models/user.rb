@@ -13,11 +13,6 @@ class User < ApplicationRecord
     reviewed_restaurants.include? restaurant
   end
 
-  def build_restaurant(attributes={}, user)
-    attributes[:user] ||= user
-    Restaurant.new(attributes)
-  end
-
   def self.from_omniauth(auth)
     where(provider: auth.provider, uid: auth.uid).first_or_create do |user|
       user.email = auth.info.email
