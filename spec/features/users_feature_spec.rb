@@ -15,12 +15,7 @@ feature 'User can sign in and out' do
 
   context 'User is signed in' do
     before do
-      visit '/'
-      click_link 'Sign up'
-      fill_in 'Email', with: 'test@example.com'
-      fill_in 'Password', with: 'testtest'
-      fill_in 'Password confirmation', with: 'testtest'
-      click_button 'Sign up'
+      sign_in
     end
 
     it 'should see "sign out" link' do
@@ -42,7 +37,7 @@ feature 'User can sign in and out' do
       visit '/'
       click_link 'Add a restaurant'
       expect(page).to have_content 'Log in'
-      expect(current_path).to be '/users/sign_in'
+      expect(current_path).to eq '/users/sign_in'
     end
 
     scenario 'user tries to delete restaurant' do

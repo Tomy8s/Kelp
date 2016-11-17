@@ -3,6 +3,7 @@ require"rails_helper"
 feature "Reviews" do
 
   scenario "Leave a review" do
+    sign_in
     visit_my_restaurant
     click_link "Review"
     fill_in "comments", with: "Pretty average place. Needs improvement"

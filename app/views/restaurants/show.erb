@@ -8,6 +8,8 @@
     <p>At <%= r.created_at %></p>
   </div>
 <% end %>
-<%= link_to 'Edit', edit_restaurant_url(@restaurant.id) %>
-<%= link_to 'Delete', restaurant_url(@restaurant), method: :delete %>
+<% if current_user %>
+  <%= link_to 'Edit', edit_restaurant_url(@restaurant.id) %>
+  <%= link_to 'Delete', restaurant_url(@restaurant), method: :delete %>
+<% end %>
 <%= link_to 'Review', new_restaurant_review_path(@restaurant.id) %>
