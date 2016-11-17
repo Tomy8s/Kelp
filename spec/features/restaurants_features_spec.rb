@@ -76,8 +76,13 @@ feature 'restaurants' do
 			expect(page).to have_content 'My restaurant has been deleted'
 		end
 
-		scenario 'user can\'t delete othre\'s restaurant' do
-			visit_my_restaurant
+		scenario 'user can\'t delete other\'s restaurant' do
+			add_restaurant_and_return
+			click_link 'Sign out'
+			sign_in('test2@test2.com')
+			click_link 'My restaurant'
+			expect(page).not_to have_link 'Delete'
+			expect(page).not_to have_link 'Edit'
 		end
 	end
 

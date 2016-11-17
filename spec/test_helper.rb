@@ -1,6 +1,6 @@
-def sign_in
+def sign_in(email = 'test@example.com')
     visit '/users/sign_up'
-    fill_in 'Email', with: 'test@example.com'
+    fill_in 'Email', with: email
     fill_in 'Password', with: 'testtest'
     fill_in 'Password confirmation', with: 'testtest'
     click_button 'Sign up'
