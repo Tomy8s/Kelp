@@ -1,5 +1,6 @@
 class Restaurant < ApplicationRecord
   has_many :reviews, dependent: :destroy
+  belongs_to :user
 
   validates :name, length: { minimum: 3 }, uniqueness: true
 
@@ -7,4 +8,5 @@ class Restaurant < ApplicationRecord
     attributes[:user] ||= user
     reviews.new(attributes)
   end
+
 end
