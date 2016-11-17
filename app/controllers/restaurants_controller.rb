@@ -24,22 +24,37 @@ class RestaurantsController < ApplicationController
 
 	def edit
 		@restaurant = Restaurant.find(params[:id])
+		if @restaurant.user != current_user
+			redirect_to restaurant_path(@restaurant.id)
+		end
 	end
 
 	def update
 		@restaurant = Restaurant.find(params[:id])
-		@restaurant.update(restaurant_params)
-		redirect_to restaurants_path
+		if @restaurant.user == current_user
+		  @restaurant.update(restaurant_params)
+			flash[:notice] = "#{@restaurant.name} has been updated"
+		else
+			flash[:notice] = "You do not have permission to edit this restaurant"
+		end
+	 redirect_to restaurant_path(@restaurant.id)
 	end
 
+
 	def destroy
-		restaurant = Restaurant.find(params[:id])
-		restaurant.destroy
-		flash[:notice] = "#{restaurant.name} has been deleted"
-		redirect_to restaurants_path
+	 restaurant = Restaurant.find(params[:id])
+		if restaurant.user == current_user
+			restaurant.destroy
+			flash[:notice] = "#{restaurant.name} has been deleted"
+			redirect_to restaurants_path
+		else
+			flash[:notice] = "You do not have permission to delete this restaurant"
+			redirect_to restaurant_path(restaurant.id)
+		end
 	end
 
 	private
+	
 	def restaurant_params
 		params.require(:restaurant).permit(:name, :description, :rating)
 	end

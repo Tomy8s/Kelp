@@ -12,4 +12,13 @@ feature "Reviews" do
     expect(page).to have_content "Rated 2/5"
   end
 
+  scenario 'average rating for restaurant' do
+   add_restaurant_and_return
+   leave_review(5)
+   click_link 'Sign out'
+   sign_in('test2@test.com')
+   leave_review(1)
+   expect(page).to have_content('Rating: 3/5')
+  end
+
 end

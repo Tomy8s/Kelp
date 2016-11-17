@@ -6,12 +6,24 @@
     <p>Rated <%= r.rating %>/5</p>
     <p><%= r.comments %></p>
     <p>At <%= r.created_at %></p>
+
+    <% if r.user == current_user %>
+      <%= link_to 'Edit review', edit_restaurant_review_url(r.restaurant.id, r.id) %>
+      <%= link_to 'Delete review', restaurant_review_url(r.restaurant.id, r.id), method: :delete %>
+    <% end %>
   </div>
+
 <% end %>
-<% if current_user %>
+<br>
+<% if @restaurant.user == current_user %>
   <%= link_to 'Edit', edit_restaurant_url(@restaurant.id) %>
   <%= link_to 'Delete', restaurant_url(@restaurant), method: :delete %>
 <% end %>
-<% if current_user && !current_user.has_reviewed?(@restaurant) %>
+
+<% if user_signed_in? && !current_user.has_reviewed?(@restaurant) %>
   <%= link_to 'Review', new_restaurant_review_path(@restaurant.id) %>
+ <% elsif !user_signed_in? %>
+  <%= link_to 'Sign in and review', new_restaurant_review_path(@restaurant.id) %>
+ <% else %>
+   You have already reviewed this restaurant
 <% end %>

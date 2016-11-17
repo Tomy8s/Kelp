@@ -18,3 +18,11 @@ def visit_my_restaurant
   add_restaurant_and_return
   click_link 'My restaurant'
 end
+
+def leave_review(rating)
+ click_link 'My restaurant'
+ click_link 'Review'
+ fill_in :comments, with: 'Lovely'
+ fill_in :rating, with: rating
+ click_button 'Review'
+end
