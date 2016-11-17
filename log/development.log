@@ -6152,3 +6152,4 @@ Processing by RestaurantsController#edit as HTML
 Completed 200 OK in 126ms (Views: 111.6ms | ActiveRecord: 4.5ms)
 
 
+  [1m[36mReview Load (8.0ms)[0m  [1m[34mSELECT  "reviews".* FROM "reviews" ORDER BY "reviews"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
