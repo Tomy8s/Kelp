@@ -1,0 +1,1346 @@
+Started GET "/" for 127.0.0.1 at 2016-11-14 11:53:14 +0000
+  
+ActiveRecord::NoDatabaseError (FATAL:  database "yelp_clone_development" does not exist
+):
+  
+activerecord (5.0.0.1) lib/active_record/connection_adapters/postgresql_adapter.rb:675:in `rescue in connect'
+activerecord (5.0.0.1) lib/active_record/connection_adapters/postgresql_adapter.rb:671:in `connect'
+activerecord (5.0.0.1) lib/active_record/connection_adapters/postgresql_adapter.rb:217:in `initialize'
+activerecord (5.0.0.1) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `new'
+activerecord (5.0.0.1) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
+activerecord (5.0.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:721:in `new_connection'
+activerecord (5.0.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:765:in `checkout_new_connection'
+activerecord (5.0.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:744:in `try_to_checkout_new_connection'
+activerecord (5.0.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:705:in `acquire_connection'
+activerecord (5.0.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:501:in `checkout'
+activerecord (5.0.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:364:in `connection'
+activerecord (5.0.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:875:in `retrieve_connection'
+activerecord (5.0.0.1) lib/active_record/connection_handling.rb:128:in `retrieve_connection'
+activerecord (5.0.0.1) lib/active_record/connection_handling.rb:91:in `connection'
+activerecord (5.0.0.1) lib/active_record/migration.rb:558:in `connection'
+activerecord (5.0.0.1) lib/active_record/migration.rb:545:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (13.5ms)
+  Rendering /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (8.3ms)
+  Rendering /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (6.0ms)
+  Rendered /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (96.4ms)
+Started GET "/" for 127.0.0.1 at 2016-11-14 11:55:04 +0000
+Started GET "/" for 127.0.0.1 at 2016-11-14 11:55:42 +0000
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /home/tom/.rvm/gems/ruby-2.3.1/gems/railties-5.0.0.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/tom/.rvm/gems/ruby-2.3.1/gems/railties-5.0.0.1/lib/rails/templates/rails/welcome/index.html.erb (19.1ms)
+Completed 200 OK in 74ms (Views: 39.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurants" for 127.0.0.1 at 2016-11-14 12:32:26 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/restaurants"):
+  
+actionpack (5.0.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.4ms)
+  Rendered /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (25.4ms)
+  Rendering /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.5ms)
+  Rendered /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (91.5ms)
+Started GET "/restaurants" for 127.0.0.1 at 2016-11-14 12:34:32 +0000
+  
+NoMethodError (undefined method `get' for main:Object
+Did you mean?  gets
+               getwd
+               gem):
+  
+config/routes.rb:5:in `<top (required)>'
+  Rendering /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (12.4ms)
+  Rendering /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.6ms)
+  Rendering /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (61.5ms)
+Started GET "/restaurants" for 127.0.0.1 at 2016-11-14 12:35:51 +0000
+  
+SyntaxError (/mnt/924C775C4C7739D5/Users/Tom/Programming/makers/08/kelp/yelp_clone/config/routes.rb:5: syntax error, unexpected tSTRING_BEG, expecting end-of-input
+get 'restaurants', :to 'restaurants#index'
+                        ^):
+  
+config/routes.rb:5: syntax error, unexpected tSTRING_BEG, expecting end-of-input
+  Rendering /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (10.7ms)
+  Rendering /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (8.4ms)
+  Rendering /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (63.6ms)
+Started GET "/restaurants" for 127.0.0.1 at 2016-11-14 12:36:52 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/restaurants"):
+  
+actionpack (5.0.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.6ms)
+  Rendered /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.5ms)
+  Rendering /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.5ms)
+  Rendered /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (51.5ms)
+Started GET "/restaurants" for 127.0.0.1 at 2016-11-14 13:08:34 +0000
+Processing by RestaurantsController#index as HTML
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+RuntimeError (Hello from the index action):
+  
+app/controllers/restaurants_controller.rb:3:in `index'
+  Rendering /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (9.2ms)
+  Rendering /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.6ms)
+  Rendering /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (66.2ms)
+Started GET "/restaurants" for 127.0.0.1 at 2016-11-14 13:10:48 +0000
+Processing by RestaurantsController#index as HTML
+Completed 406 Not Acceptable in 110ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::UnknownFormat (RestaurantsController#index is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not… nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+actionpack (5.0.0.1) lib/action_controller/metal/implicit_render.rb:56:in `default_render'
+actionpack (5.0.0.1) lib/action_controller/metal/basic_implicit_render.rb:4:in `block in send_action'
+actionpack (5.0.0.1) lib/action_controller/metal/basic_implicit_render.rb:4:in `tap'
+actionpack (5.0.0.1) lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+actionpack (5.0.0.1) lib/abstract_controller/base.rb:188:in `process_action'
+actionpack (5.0.0.1) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.0.0.1) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:126:in `call'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:506:in `block (2 levels) in compile'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:455:in `call'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:101:in `__run_callbacks__'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:750:in `_run_process_action_callbacks'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.0.1) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.0.0.1) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.0.0.1) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.0.0.1) lib/active_support/notifications.rb:164:in `block in instrument'
+activesupport (5.0.0.1) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.0.0.1) lib/active_support/notifications.rb:164:in `instrument'
+actionpack (5.0.0.1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.0.0.1) lib/action_controller/metal/params_wrapper.rb:248:in `process_action'
+activerecord (5.0.0.1) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+actionpack (5.0.0.1) lib/abstract_controller/base.rb:126:in `process'
+actionview (5.0.0.1) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.0.0.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (5.0.0.1) lib/action_controller/metal.rb:262:in `dispatch'
+actionpack (5.0.0.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (5.0.0.1) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.0.0.1) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.0.1) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.0.1) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.0.1) lib/action_dispatch/routing/route_set.rb:725:in `call'
+rack (2.0.1) lib/rack/etag.rb:25:in `call'
+rack (2.0.1) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.1) lib/rack/head.rb:12:in `call'
+rack (2.0.1) lib/rack/session/abstract/id.rb:222:in `context'
+rack (2.0.1) lib/rack/session/abstract/id.rb:216:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.0.0.1) lib/active_record/migration.rb:552:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (9.6ms)
+  Rendering /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (9.1ms)
+  Rendering /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (87.9ms)
+Started GET "/restaurants" for 127.0.0.1 at 2016-11-14 13:13:04 +0000
+Processing by RestaurantsController#index as HTML
+  Rendering restaurants/index.erb within layouts/application
+  Rendered restaurants/index.erb within layouts/application (1.2ms)
+Completed 200 OK in 2469ms (Views: 2463.6ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (17.4ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying PRIMARY KEY)[0m
+  [1m[35m (16.7ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT pg_try_advisory_lock(8692138485699695145);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateRestaurants (20161114150956)
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (17.1ms)[0m  [1m[35mCREATE TABLE "restaurants" ("id" serial primary key, "name" character varying, "rating" integer, "comment" text, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20161114150956"]]
+  [1m[35m (3.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.8ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", 2016-11-14 15:45:15 UTC], ["updated_at", 2016-11-14 15:45:15 UTC]]
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT pg_advisory_unlock(8692138485699695145)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (5.4ms)[0m  [1m[34mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'restaurants'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+Started GET "/restaurants" for 127.0.0.1 at 2016-11-14 15:49:27 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (1.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by RestaurantsController#index as HTML
+  Rendering restaurants/index.erb within layouts/application
+  Rendered restaurants/index.erb within layouts/application (3.4ms)
+Completed 500 Internal Server Error in 92ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/mnt/924C775C4C7739D5/Users/Tom/Programming/makers/08/kelp/yelp_clone/app/views/restaurants/index.erb:9: syntax error, unexpected ',', expecting &. or :: or '[' or '.'
+...=( link_to, 'Add a restaurant', new_restaurant );@output_buf...
+...                               ^):
+  
+app/views/restaurants/index.erb:9: syntax error, unexpected ',', expecting &. or :: or '[' or '.'
+  Rendering /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (16.0ms)
+  Rendering /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.0ms)
+  Rendering /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.3ms)
+  Rendered /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (76.9ms)
+Started GET "/restaurants" for 127.0.0.1 at 2016-11-14 15:49:41 +0000
+Processing by RestaurantsController#index as HTML
+  Rendering restaurants/index.erb within layouts/application
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM "restaurants"[0m
+  [1m[36mRestaurant Load (0.7ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurants/index.erb within layouts/application (384.5ms)
+Completed 500 Internal Server Error in 403ms (ActiveRecord: 4.4ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `new_restaurant' for #<#<Class:0x007f3d9c89ec58>:0x007f3d9d374290>
+Did you mean?  new_restaurant_url):
+    6: <h1>No restaurants yet</h1>
+    7: <% end %>
+    8: 
+    9: <%= link_to 'Add a restaurant', new_restaurant %>
+  
+app/views/restaurants/index.erb:9:in `_app_views_restaurants_index_erb___3823969458342528467_69951303689780'
+  Rendering /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (11.8ms)
+  Rendering /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.8ms)
+  Rendering /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (70.0ms)
+Started GET "/restaurants" for 127.0.0.1 at 2016-11-14 15:50:37 +0000
+Processing by RestaurantsController#index as HTML
+  Rendering restaurants/index.erb within layouts/application
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "restaurants"[0m
+  Rendered restaurants/index.erb within layouts/application (3.8ms)
+Completed 200 OK in 782ms (Views: 772.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/restaurants/new" for 127.0.0.1 at 2016-11-14 15:50:44 +0000
+  
+AbstractController::ActionNotFound (The action 'new' could not be found for RestaurantsController):
+  
+actionpack (5.0.0.1) lib/abstract_controller/base.rb:121:in `process'
+actionview (5.0.0.1) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.0.0.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (5.0.0.1) lib/action_controller/metal.rb:262:in `dispatch'
+actionpack (5.0.0.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (5.0.0.1) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.0.0.1) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.0.1) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.0.1) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.0.1) lib/action_dispatch/routing/route_set.rb:725:in `call'
+rack (2.0.1) lib/rack/etag.rb:25:in `call'
+rack (2.0.1) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.1) lib/rack/head.rb:12:in `call'
+rack (2.0.1) lib/rack/session/abstract/id.rb:222:in `context'
+rack (2.0.1) lib/rack/session/abstract/id.rb:216:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.0.0.1) lib/active_record/migration.rb:552:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout
+  Rendered /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (2.3ms)
+Started GET "/restaurants" for 127.0.0.1 at 2016-11-14 15:50:47 +0000
+Processing by RestaurantsController#index as HTML
+  Rendering restaurants/index.erb within layouts/application
+  [1m[35m (3.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "restaurants"[0m
+  Rendered restaurants/index.erb within layouts/application (9.5ms)
+Completed 200 OK in 135ms (Views: 124.6ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/restaurants" for 127.0.0.1 at 2016-11-14 15:57:33 +0000
+Processing by RestaurantsController#index as HTML
+  Rendering restaurants/index.erb within layouts/application
+  [1m[35m (2.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "restaurants"[0m
+  Rendered restaurants/index.erb within layouts/application (6.8ms)
+Completed 200 OK in 92ms (Views: 85.4ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/restaurants/new" for 127.0.0.1 at 2016-11-14 15:57:35 +0000
+Processing by RestaurantsController#new as HTML
+  Rendering restaurants/new.erb within layouts/application
+  Rendered restaurants/new.erb within layouts/application (1.7ms)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/mnt/924C775C4C7739D5/Users/Tom/Programming/makers/08/kelp/yelp_clone/app/views/restaurants/new.erb:1: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...r.new; form_for @restaurant url:{action: "create"} do |f| 
+...                               ^
+/mnt/924C775C4C7739D5/Users/Tom/Programming/makers/08/kelp/yelp_clone/app/views/restaurants/new.erb:1: syntax error, unexpected keyword_do_block, expecting keyword_end
+...urant url:{action: "create"} do |f| 
+...                               ^
+/mnt/924C775C4C7739D5/Users/Tom/Programming/makers/08/kelp/yelp_clone/app/views/restaurants/new.erb:5: syntax error, unexpected keyword_ensure, expecting end-of-input):
+  
+app/views/restaurants/new.erb:1: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/views/restaurants/new.erb:1: syntax error, unexpected keyword_do_block, expecting keyword_end
+app/views/restaurants/new.erb:5: syntax error, unexpected keyword_ensure, expecting end-of-input
+  Rendering /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (14.8ms)
+  Rendering /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.6ms)
+  Rendering /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (59.6ms)
+Started GET "/restaurants/new" for 127.0.0.1 at 2016-11-14 15:58:50 +0000
+Processing by RestaurantsController#new as HTML
+  Rendering restaurants/new.erb within layouts/application
+  Rendered restaurants/new.erb within layouts/application (1.7ms)
+Completed 500 Internal Server Error in 52ms (ActiveRecord: 4.6ms)
+
+
+  
+SyntaxError (/mnt/924C775C4C7739D5/Users/Tom/Programming/makers/08/kelp/yelp_clone/app/views/restaurants/new.erb:1: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...r.new; form_for @restaurant url:{action: "create"} do |f| 
+...                               ^
+/mnt/924C775C4C7739D5/Users/Tom/Programming/makers/08/kelp/yelp_clone/app/views/restaurants/new.erb:1: syntax error, unexpected keyword_do_block, expecting keyword_end
+...urant url:{action: "create"} do |f| 
+...                               ^
+/mnt/924C775C4C7739D5/Users/Tom/Programming/makers/08/kelp/yelp_clone/app/views/restaurants/new.erb:5: syntax error, unexpected keyword_ensure, expecting end-of-input):
+  
+app/views/restaurants/new.erb:1: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/views/restaurants/new.erb:1: syntax error, unexpected keyword_do_block, expecting keyword_end
+app/views/restaurants/new.erb:5: syntax error, unexpected keyword_ensure, expecting end-of-input
+  Rendering /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (16.8ms)
+  Rendering /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.1ms)
+  Rendering /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.8ms)
+  Rendered /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (72.7ms)
+Started GET "/restaurants/new" for 127.0.0.1 at 2016-11-14 15:59:50 +0000
+Processing by RestaurantsController#new as HTML
+  Rendering restaurants/new.erb within layouts/application
+  Rendered restaurants/new.erb within layouts/application (194.8ms)
+Completed 500 Internal Server Error in 213ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `label_tag' for #<ActionView::Helpers::FormBuilder:0x007f3d9e7a2938>
+Did you mean?  label):
+    1: <% form_for @restaurant, url:{action: "create"} do |f| %>
+    2:   <%= f.label_tag :name, 'Restaurant name' %>
+    3:   <%= f.text_field :name %>
+    4: <% end %>
+  
+app/views/restaurants/new.erb:2:in `block in _app_views_restaurants_new_erb___3415065657013003913_69951314188560'
+app/views/restaurants/new.erb:1:in `_app_views_restaurants_new_erb___3415065657013003913_69951314188560'
+  Rendering /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (15.8ms)
+  Rendering /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.4ms)
+  Rendering /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (69.3ms)
+Started GET "/restaurants/new" for 127.0.0.1 at 2016-11-14 16:00:20 +0000
+Processing by RestaurantsController#new as HTML
+  Rendering restaurants/new.erb within layouts/application
+  Rendered restaurants/new.erb within layouts/application (257.8ms)
+Completed 500 Internal Server Error in 277ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `label_tag' for #<ActionView::Helpers::FormBuilder:0x007f3daca80958>
+Did you mean?  label):
+    1: <% form_for @restaurant, url:{action: "create"} do |f| %>
+    2:   <%= f.label_tag(:name, 'Restaurant name') %>
+    3:   <%= f.text_field :name %>
+    4: <% end %>
+  
+app/views/restaurants/new.erb:2:in `block in _app_views_restaurants_new_erb___3415065657013003913_69951433188720'
+app/views/restaurants/new.erb:1:in `_app_views_restaurants_new_erb___3415065657013003913_69951433188720'
+  Rendering /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (19.4ms)
+  Rendering /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (11.0ms)
+  Rendering /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.3ms)
+  Rendered /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (89.6ms)
+Started GET "/restaurants/new" for 127.0.0.1 at 2016-11-14 16:02:20 +0000
+Processing by RestaurantsController#new as HTML
+  Rendering restaurants/new.erb within layouts/application
+  Rendered restaurants/new.erb within layouts/application (267.1ms)
+Completed 500 Internal Server Error in 288ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `submit_tag' for #<ActionView::Helpers::FormBuilder:0x007f3d9c9ba330>
+Did you mean?  submit):
+    1: <% form_for @restaurant, url:{action: "create"} do |f| %>
+    2:   Restaurant name:  <%= f.text_field :name %>
+    3:   <%= f.submit_tag 'Add Restaurant' %>
+    4: <% end %>
+  
+app/views/restaurants/new.erb:3:in `block in _app_views_restaurants_new_erb___3415065657013003913_69951300259820'
+app/views/restaurants/new.erb:1:in `_app_views_restaurants_new_erb___3415065657013003913_69951300259820'
+  Rendering /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (21.5ms)
+  Rendering /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.3ms)
+  Rendering /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.1ms)
+  Rendered /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (77.1ms)
+Started GET "/restaurants/new" for 127.0.0.1 at 2016-11-14 16:03:00 +0000
+Processing by RestaurantsController#new as HTML
+  Rendering restaurants/new.erb within layouts/application
+  Rendered restaurants/new.erb within layouts/application (20.1ms)
+Completed 200 OK in 139ms (Views: 132.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurants/new" for 127.0.0.1 at 2016-11-14 16:03:11 +0000
+Processing by RestaurantsController#new as HTML
+  Rendering restaurants/new.erb within layouts/application
+  Rendered restaurants/new.erb within layouts/application (2.9ms)
+Completed 200 OK in 84ms (Views: 80.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurants/new" for 127.0.0.1 at 2016-11-14 16:03:19 +0000
+Processing by RestaurantsController#new as HTML
+  Rendering restaurants/new.erb within layouts/application
+  Rendered restaurants/new.erb within layouts/application (2.9ms)
+Completed 200 OK in 119ms (Views: 108.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurants/new" for 127.0.0.1 at 2016-11-14 16:03:59 +0000
+Processing by RestaurantsController#new as HTML
+  Rendering restaurants/new.erb within layouts/application
+  Rendered restaurants/new.erb within layouts/application (5.6ms)
+Completed 200 OK in 128ms (Views: 120.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurants/new" for 127.0.0.1 at 2016-11-14 16:06:28 +0000
+Processing by RestaurantsController#new as HTML
+  Rendering restaurants/new.erb within layouts/application
+  Rendered restaurants/new.erb within layouts/application (6.6ms)
+Completed 200 OK in 186ms (Views: 148.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/restaurants" for 127.0.0.1 at 2016-11-14 16:06:48 +0000
+Processing by RestaurantsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qGTImgvf1dRxnkGj5ZURQIMBJSSDu3E3xJPBukS1UsPz9gvFSD054t3i0YvbwAJ/INTgvtnPgm1ttKdtZ/KIEA==", "restaurant"=>{"name"=>"Happy house"}, "commit"=>"Add Restaurant"}
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `create' for nil:NilClass):
+  
+app/controllers/restaurants_controller.rb:11:in `create'
+  Rendering /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (10.7ms)
+  Rendering /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.7ms)
+  Rendering /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.4ms)
+  Rendered /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (66.3ms)
+Started POST "/restaurants" for 127.0.0.1 at 2016-11-14 16:07:20 +0000
+Processing by RestaurantsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qGTImgvf1dRxnkGj5ZURQIMBJSSDu3E3xJPBukS1UsPz9gvFSD054t3i0YvbwAJ/INTgvtnPgm1ttKdtZ/KIEA==", "restaurant"=>{"name"=>"Happy house"}, "commit"=>"Add Restaurant"}
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  
+app/controllers/restaurants_controller.rb:12:in `create'
+  Rendering /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (11.1ms)
+  Rendering /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.7ms)
+  Rendering /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.3ms)
+  Rendered /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (65.4ms)
+Started POST "/restaurants" for 127.0.0.1 at 2016-11-14 16:09:44 +0000
+Processing by RestaurantsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qGTImgvf1dRxnkGj5ZURQIMBJSSDu3E3xJPBukS1UsPz9gvFSD054t3i0YvbwAJ/INTgvtnPgm1ttKdtZ/KIEA==", "restaurant"=>{"name"=>"Happy house"}, "commit"=>"Add Restaurant"}
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  
+app/controllers/restaurants_controller.rb:12:in `create'
+  Rendering /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (13.2ms)
+  Rendering /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.4ms)
+  Rendering /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.0ms)
+  Rendered /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (77.5ms)
+Started POST "/restaurants" for 127.0.0.1 at 2016-11-14 16:10:36 +0000
+Processing by RestaurantsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qGTImgvf1dRxnkGj5ZURQIMBJSSDu3E3xJPBukS1UsPz9gvFSD054t3i0YvbwAJ/INTgvtnPgm1ttKdtZ/KIEA==", "restaurant"=>{"name"=>"Happy house"}, "commit"=>"Add Restaurant"}
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  
+app/controllers/restaurants_controller.rb:13:in `create'
+  Rendering /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (15.3ms)
+  Rendering /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.5ms)
+  Rendering /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.8ms)
+  Rendered /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (73.2ms)
+Started POST "/restaurants" for 127.0.0.1 at 2016-11-14 16:10:53 +0000
+Processing by RestaurantsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qGTImgvf1dRxnkGj5ZURQIMBJSSDu3E3xJPBukS1UsPz9gvFSD054t3i0YvbwAJ/INTgvtnPgm1ttKdtZ/KIEA==", "restaurant"=>{"name"=>"Happy house"}, "commit"=>"Add Restaurant"}
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  
+app/controllers/restaurants_controller.rb:13:in `create'
+  Rendering /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (18.2ms)
+  Rendering /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.9ms)
+  Rendering /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.9ms)
+  Rendered /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (80.8ms)
+Started POST "/restaurants" for 127.0.0.1 at 2016-11-14 16:11:52 +0000
+Processing by RestaurantsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qGTImgvf1dRxnkGj5ZURQIMBJSSDu3E3xJPBukS1UsPz9gvFSD054t3i0YvbwAJ/INTgvtnPgm1ttKdtZ/KIEA==", "restaurant"=>{"name"=>"Happy house"}, "commit"=>"Add Restaurant"}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  
+app/controllers/restaurants_controller.rb:13:in `create'
+  Rendering /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (11.4ms)
+  Rendering /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.7ms)
+  Rendering /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.7ms)
+  Rendered /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (68.7ms)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(8692138485699695145);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (2.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::InternalMetadata Load (5.9ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT pg_advisory_unlock(8692138485699695145)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (6.5ms)[0m  [1m[34mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'restaurants'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+Started POST "/restaurants" for 127.0.0.1 at 2016-11-14 16:12:23 +0000
+Processing by RestaurantsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qGTImgvf1dRxnkGj5ZURQIMBJSSDu3E3xJPBukS1UsPz9gvFSD054t3i0YvbwAJ/INTgvtnPgm1ttKdtZ/KIEA==", "restaurant"=>{"name"=>"Happy house"}, "commit"=>"Add Restaurant"}
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  
+app/controllers/restaurants_controller.rb:13:in `create'
+  Rendering /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (11.9ms)
+  Rendering /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.1ms)
+  Rendering /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.1ms)
+  Rendered /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (59.8ms)
+Started POST "/restaurants" for 127.0.0.1 at 2016-11-14 16:12:47 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (1.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by RestaurantsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qGTImgvf1dRxnkGj5ZURQIMBJSSDu3E3xJPBukS1UsPz9gvFSD054t3i0YvbwAJ/INTgvtnPgm1ttKdtZ/KIEA==", "restaurant"=>{"name"=>"Happy house"}, "commit"=>"Add Restaurant"}
+Completed 500 Internal Server Error in 77ms (ActiveRecord: 9.4ms)
+
+
+  
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  
+app/controllers/restaurants_controller.rb:13:in `create'
+  Rendering /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (11.6ms)
+  Rendering /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.4ms)
+  Rendering /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.7ms)
+  Rendered /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (74.7ms)
+Started POST "/restaurants" for 127.0.0.1 at 2016-11-14 16:12:55 +0000
+Processing by RestaurantsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qGTImgvf1dRxnkGj5ZURQIMBJSSDu3E3xJPBukS1UsPz9gvFSD054t3i0YvbwAJ/INTgvtnPgm1ttKdtZ/KIEA==", "restaurant"=>{"name"=>"Happy house"}, "commit"=>"Add Restaurant"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  
+app/controllers/restaurants_controller.rb:13:in `create'
+  Rendering /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (11.6ms)
+  Rendering /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.7ms)
+  Rendering /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.2ms)
+  Rendered /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (78.6ms)
+Started POST "/restaurants" for 127.0.0.1 at 2016-11-14 16:15:51 +0000
+Processing by RestaurantsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qGTImgvf1dRxnkGj5ZURQIMBJSSDu3E3xJPBukS1UsPz9gvFSD054t3i0YvbwAJ/INTgvtnPgm1ttKdtZ/KIEA==", "restaurant"=>{"name"=>"Happy house"}, "commit"=>"Add Restaurant"}
+Completed 500 Internal Server Error in 288ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `erstaurant_params' for #<RestaurantsController:0x007f803c091438>
+Did you mean?  restaurant_params):
+  
+app/controllers/restaurants_controller.rb:11:in `create'
+  Rendering /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (10.7ms)
+  Rendering /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.3ms)
+  Rendering /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.8ms)
+  Rendered /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (173.0ms)
+Started POST "/restaurants" for 127.0.0.1 at 2016-11-14 16:16:02 +0000
+Processing by RestaurantsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qGTImgvf1dRxnkGj5ZURQIMBJSSDu3E3xJPBukS1UsPz9gvFSD054t3i0YvbwAJ/INTgvtnPgm1ttKdtZ/KIEA==", "restaurant"=>{"name"=>"Happy house"}, "commit"=>"Add Restaurant"}
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.5ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Happy house"], ["created_at", 2016-11-14 16:16:02 UTC], ["updated_at", 2016-11-14 16:16:02 UTC]]
+  [1m[35m (2.8ms)[0m  [1m[35mCOMMIT[0m
+No template found for RestaurantsController#create, rendering head :no_content
+Completed 204 No Content in 256ms (ActiveRecord: 10.9ms)
+
+
+Started POST "/restaurants" for 127.0.0.1 at 2016-11-14 16:16:05 +0000
+Processing by RestaurantsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qGTImgvf1dRxnkGj5ZURQIMBJSSDu3E3xJPBukS1UsPz9gvFSD054t3i0YvbwAJ/INTgvtnPgm1ttKdtZ/KIEA==", "restaurant"=>{"name"=>"Happy house"}, "commit"=>"Add Restaurant"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Happy house"], ["created_at", 2016-11-14 16:16:05 UTC], ["updated_at", 2016-11-14 16:16:05 UTC]]
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+No template found for RestaurantsController#create, rendering head :no_content
+Completed 204 No Content in 162ms (ActiveRecord: 2.7ms)
+
+
+Started POST "/restaurants" for 127.0.0.1 at 2016-11-14 16:16:13 +0000
+Processing by RestaurantsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qGTImgvf1dRxnkGj5ZURQIMBJSSDu3E3xJPBukS1UsPz9gvFSD054t3i0YvbwAJ/INTgvtnPgm1ttKdtZ/KIEA==", "restaurant"=>{"name"=>"Happy house"}, "commit"=>"Add Restaurant"}
+  [1m[35m (1.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Happy house"], ["created_at", 2016-11-14 16:16:13 UTC], ["updated_at", 2016-11-14 16:16:13 UTC]]
+  [1m[35m (2.5ms)[0m  [1m[35mCOMMIT[0m
+No template found for RestaurantsController#create, rendering head :no_content
+Completed 204 No Content in 225ms (ActiveRecord: 13.2ms)
+
+
+Started POST "/restaurants" for 127.0.0.1 at 2016-11-14 16:16:14 +0000
+Processing by RestaurantsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qGTImgvf1dRxnkGj5ZURQIMBJSSDu3E3xJPBukS1UsPz9gvFSD054t3i0YvbwAJ/INTgvtnPgm1ttKdtZ/KIEA==", "restaurant"=>{"name"=>"Happy house"}, "commit"=>"Add Restaurant"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Happy house"], ["created_at", 2016-11-14 16:16:14 UTC], ["updated_at", 2016-11-14 16:16:14 UTC]]
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+No template found for RestaurantsController#create, rendering head :no_content
+Completed 204 No Content in 176ms (ActiveRecord: 3.1ms)
+
+
+Started POST "/restaurants" for 127.0.0.1 at 2016-11-14 16:17:19 +0000
+Processing by RestaurantsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qGTImgvf1dRxnkGj5ZURQIMBJSSDu3E3xJPBukS1UsPz9gvFSD054t3i0YvbwAJ/INTgvtnPgm1ttKdtZ/KIEA==", "restaurant"=>{"name"=>"Happy house"}, "commit"=>"Add Restaurant"}
+  [1m[35m (2.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Happy house"], ["created_at", 2016-11-14 16:17:19 UTC], ["updated_at", 2016-11-14 16:17:19 UTC]]
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+Completed 500 Internal Server Error in 254ms (ActiveRecord: 12.9ms)
+
+
+  
+NameError (undefined local variable or method `restaurants' for #<RestaurantsController:0x007f8034326bb0>
+Did you mean?  restaurants_url):
+  
+app/controllers/restaurants_controller.rb:12:in `create'
+  Rendering /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (14.1ms)
+  Rendering /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.3ms)
+  Rendering /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.8ms)
+  Rendered /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (165.6ms)
+Started POST "/restaurants" for 127.0.0.1 at 2016-11-14 16:17:40 +0000
+Processing by RestaurantsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qGTImgvf1dRxnkGj5ZURQIMBJSSDu3E3xJPBukS1UsPz9gvFSD054t3i0YvbwAJ/INTgvtnPgm1ttKdtZ/KIEA==", "restaurant"=>{"name"=>"Happy house"}, "commit"=>"Add Restaurant"}
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.1ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Happy house"], ["created_at", 2016-11-14 16:17:40 UTC], ["updated_at", 2016-11-14 16:17:40 UTC]]
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/restaurants
+Completed 302 Found in 61ms (ActiveRecord: 11.0ms)
+
+
+Started GET "/restaurants" for 127.0.0.1 at 2016-11-14 16:17:40 +0000
+Processing by RestaurantsController#index as HTML
+  Rendering restaurants/index.erb within layouts/application
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "restaurants"[0m
+  [1m[36mRestaurant Load (0.7ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurants/index.erb within layouts/application (7.7ms)
+Completed 200 OK in 896ms (Views: 885.7ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/restaurants/new" for 127.0.0.1 at 2016-11-14 16:17:53 +0000
+Processing by RestaurantsController#new as HTML
+  Rendering restaurants/new.erb within layouts/application
+  Rendered restaurants/new.erb within layouts/application (29.8ms)
+Completed 200 OK in 153ms (Views: 146.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/restaurants" for 127.0.0.1 at 2016-11-14 16:18:00 +0000
+Processing by RestaurantsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mzL9qvcCRkm96wyytAvzwYfjlrjc66QEcGhtTouPrsLxvZRlxmt2JNVVcmTsc6fPEOr144x5gOH0Gxlrx+KUdA==", "restaurant"=>{"name"=>"Sad house"}, "commit"=>"Add Restaurant"}
+  [1m[35m (1.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (2.3ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Sad house"], ["created_at", 2016-11-14 16:18:00 UTC], ["updated_at", 2016-11-14 16:18:00 UTC]]
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/restaurants
+Completed 302 Found in 17ms (ActiveRecord: 5.5ms)
+
+
+Started GET "/restaurants" for 127.0.0.1 at 2016-11-14 16:18:00 +0000
+Processing by RestaurantsController#index as HTML
+  Rendering restaurants/index.erb within layouts/application
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "restaurants"[0m
+  [1m[36mRestaurant Load (0.9ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurants/index.erb within layouts/application (14.4ms)
+Completed 200 OK in 250ms (Views: 240.7ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/restaurants" for 127.0.0.1 at 2016-11-14 19:26:33 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.0.0.1) lib/active_record/migration.rb:572:in `check_pending!'
+activerecord (5.0.0.1) lib/active_record/migration.rb:548:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.6ms)
+  Rendering /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.9ms)
+  Rendering /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (58.8ms)
+Started GET "/restaurants" for 127.0.0.1 at 2016-11-14 19:26:51 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.0.0.1) lib/active_record/migration.rb:572:in `check_pending!'
+activerecord (5.0.0.1) lib/active_record/migration.rb:548:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.9ms)
+  Rendering /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendering /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /home/tom/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (53.7ms)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(8692138485699695145);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to ChangeColumnName (20161114170751)
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.6ms)[0m  [1m[35mALTER TABLE "restaurants" RENAME COLUMN "comment" TO "description"[0m
+  [1m[35mSQL (1.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20161114170751"]]
+  [1m[35m (4.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_advisory_unlock(8692138485699695145)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (5.2ms)[0m  [1m[34mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'restaurants'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+Started GET "/restaurants" for 127.0.0.1 at 2016-11-14 19:26:54 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by RestaurantsController#index as HTML
+  Rendering restaurants/index.erb within layouts/application
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "restaurants"[0m
+  [1m[36mRestaurant Load (0.7ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurants/index.erb within layouts/application (23.6ms)
+Completed 200 OK in 119ms (Views: 102.1ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/restaurants/7" for 127.0.0.1 at 2016-11-14 19:26:57 +0000
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mRestaurant Load (0.5ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering restaurants/show.erb within layouts/application
+  Rendered restaurants/show.erb within layouts/application (1.9ms)
+Completed 200 OK in 93ms (Views: 67.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/restaurants/7/edit" for 127.0.0.1 at 2016-11-14 19:26:59 +0000
+Processing by RestaurantsController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mRestaurant Load (1.3ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering restaurants/edit.erb within layouts/application
+  Rendered restaurants/edit.erb within layouts/application (16.1ms)
+Completed 200 OK in 85ms (Views: 77.4ms | ActiveRecord: 1.3ms)
+
+
+Started PATCH "/restaurants/7" for 127.0.0.1 at 2016-11-14 19:27:02 +0000
+Processing by RestaurantsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"L+lMLEqj3nKqAUaL1rqu98ln508BmgnXKcvwcikGeBoadZ8inZP+EcdzdFMCyh9xNScH84giYXVgGG00nqM8kw==", "restaurant"=>{"name"=>"Sad house", "description"=>"", "rating"=>"1"}, "commit"=>"Update Restaurant", "id"=>"7"}
+  [1m[36mRestaurant Load (1.5ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[33mUPDATE "restaurants" SET "rating" = $1, "updated_at" = $2 WHERE "restaurants"."id" = $3[0m  [["rating", 1], ["updated_at", 2016-11-14 19:27:02 UTC], ["id", 7]]
+  [1m[35m (4.7ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/restaurants
+Completed 302 Found in 19ms (ActiveRecord: 7.2ms)
+
+
+Started GET "/restaurants" for 127.0.0.1 at 2016-11-14 19:27:02 +0000
+Processing by RestaurantsController#index as HTML
+  Rendering restaurants/index.erb within layouts/application
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "restaurants"[0m
+  [1m[36mRestaurant Load (0.6ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurants/index.erb within layouts/application (8.1ms)
+Completed 200 OK in 90ms (Views: 82.6ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/restaurants/3" for 127.0.0.1 at 2016-11-14 19:27:04 +0000
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mRestaurant Load (0.6ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering restaurants/show.erb within layouts/application
+  Rendered restaurants/show.erb within layouts/application (1.5ms)
+Completed 200 OK in 85ms (Views: 76.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/restaurants/3/edit" for 127.0.0.1 at 2016-11-14 19:27:05 +0000
+Processing by RestaurantsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mRestaurant Load (0.6ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering restaurants/edit.erb within layouts/application
+  Rendered restaurants/edit.erb within layouts/application (4.3ms)
+Completed 200 OK in 84ms (Views: 75.9ms | ActiveRecord: 0.6ms)
+
+
+Started PATCH "/restaurants/3" for 127.0.0.1 at 2016-11-14 19:27:18 +0000
+Processing by RestaurantsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+DzzeGL6MvitlcAoVZtXeNev6gMjZvrC1/fPxBLaVn4KUvGgcMctxrFXiTPxSQOeAEVDu8Xk6TJp/CJhMjIoBQ==", "restaurant"=>{"name"=>"Happy house", "description"=>"Happy! ))))))", "rating"=>"3"}, "commit"=>"Update Restaurant", "id"=>"3"}
+  [1m[36mRestaurant Load (0.4ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[33mUPDATE "restaurants" SET "rating" = $1, "updated_at" = $2 WHERE "restaurants"."id" = $3[0m  [["rating", 3], ["updated_at", 2016-11-14 19:27:18 UTC], ["id", 3]]
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/restaurants
+Completed 302 Found in 13ms (ActiveRecord: 3.7ms)
+
+
+Started GET "/restaurants" for 127.0.0.1 at 2016-11-14 19:27:18 +0000
+Processing by RestaurantsController#index as HTML
+  Rendering restaurants/index.erb within layouts/application
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "restaurants"[0m
+  [1m[36mRestaurant Load (0.7ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurants/index.erb within layouts/application (9.1ms)
+Completed 200 OK in 84ms (Views: 77.9ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/restaurants" for 127.0.0.1 at 2016-11-15 09:26:07 +0000
+Processing by RestaurantsController#index as HTML
+  Rendering restaurants/index.erb within layouts/application
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "restaurants"[0m
+  [1m[36mRestaurant Load (0.5ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurants/index.erb within layouts/application (28.5ms)
+Completed 200 OK in 283ms (Views: 275.7ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/restaurants/7" for 127.0.0.1 at 2016-11-15 09:28:50 +0000
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mRestaurant Load (0.9ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering restaurants/show.erb within layouts/application
+  Rendered restaurants/show.erb within layouts/application (1.3ms)
+Completed 200 OK in 79ms (Views: 72.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/restaurants/7" for 127.0.0.1 at 2016-11-15 09:30:21 +0000
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mRestaurant Load (1.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering restaurants/show.erb within layouts/application
+  Rendered restaurants/show.erb within layouts/application (2.2ms)
+Completed 200 OK in 97ms (Views: 88.1ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/restaurants/7" for 127.0.0.1 at 2016-11-15 09:49:46 +0000
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mRestaurant Load (1.8ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering restaurants/show.erb within layouts/application
+  Rendered restaurants/show.erb within layouts/application (1.9ms)
+Completed 200 OK in 91ms (Views: 82.0ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/restaurants/7" for 127.0.0.1 at 2016-11-15 09:49:49 +0000
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mRestaurant Load (0.5ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering restaurants/show.erb within layouts/application
+  Rendered restaurants/show.erb within layouts/application (1.6ms)
+Completed 200 OK in 86ms (Views: 80.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/restaurants/7" for 127.0.0.1 at 2016-11-15 10:00:38 +0000
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mRestaurant Load (1.7ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering restaurants/show.erb within layouts/application
+  Rendered restaurants/show.erb within layouts/application (2.1ms)
+Completed 200 OK in 118ms (Views: 85.0ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/restaurants" for 127.0.0.1 at 2016-11-15 10:00:43 +0000
+Processing by RestaurantsController#index as HTML
+  Rendering restaurants/index.erb within layouts/application
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "restaurants"[0m
+  [1m[36mRestaurant Load (0.8ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurants/index.erb within layouts/application (7.3ms)
+Completed 200 OK in 102ms (Views: 93.9ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/restaurants/1" for 127.0.0.1 at 2016-11-15 10:00:44 +0000
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRestaurant Load (0.5ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering restaurants/show.erb within layouts/application
+  Rendered restaurants/show.erb within layouts/application (1.7ms)
+Completed 200 OK in 91ms (Views: 85.1ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/restaurants/1" for 127.0.0.1 at 2016-11-15 10:00:46 +0000
+Processing by RestaurantsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"j/WQEwbA0GhVExANpfZeq+UVtLXx7BlvMvTrH2QHgOnUZ1NMRSI8XvlvgCWbo02URsBxL6uY6jWb043IR0BaOg==", "id"=>"1"}
+  [1m[36mRestaurant Load (1.2ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.8ms)[0m  [1m[31mDELETE FROM "restaurants" WHERE "restaurants"."id" = $1[0m  [["id", 1]]
+  [1m[35m (7.1ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/restaurants
+Completed 302 Found in 20ms (ActiveRecord: 10.5ms)
+
+
+Started GET "/restaurants" for 127.0.0.1 at 2016-11-15 10:00:46 +0000
+Processing by RestaurantsController#index as HTML
+  Rendering restaurants/index.erb within layouts/application
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "restaurants"[0m
+  [1m[36mRestaurant Load (1.0ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurants/index.erb within layouts/application (7.8ms)
+Completed 200 OK in 111ms (Views: 103.8ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/restaurants/2" for 127.0.0.1 at 2016-11-15 10:00:48 +0000
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRestaurant Load (0.7ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering restaurants/show.erb within layouts/application
+  Rendered restaurants/show.erb within layouts/application (1.9ms)
+Completed 200 OK in 78ms (Views: 72.3ms | ActiveRecord: 1.0ms)
+
+
+Started DELETE "/restaurants/2" for 127.0.0.1 at 2016-11-15 10:00:49 +0000
+Processing by RestaurantsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"O1wYgzDxLtD0bK0JK/1uztG2cMaNgkkVUPD3dbILgb5gztvccxPC5lgQPSEVqH3xcmO1XNf2uk/515GikUxbbQ==", "id"=>"2"}
+  [1m[36mRestaurant Load (1.9ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.2ms)[0m  [1m[31mDELETE FROM "restaurants" WHERE "restaurants"."id" = $1[0m  [["id", 2]]
+  [1m[35m (3.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/restaurants
+Completed 302 Found in 16ms (ActiveRecord: 6.4ms)
+
+
+Started GET "/restaurants" for 127.0.0.1 at 2016-11-15 10:00:49 +0000
+Processing by RestaurantsController#index as HTML
+  Rendering restaurants/index.erb within layouts/application
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "restaurants"[0m
+  [1m[36mRestaurant Load (0.5ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurants/index.erb within layouts/application (8.2ms)
+Completed 200 OK in 90ms (Views: 84.2ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/restaurants/4" for 127.0.0.1 at 2016-11-15 10:00:51 +0000
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mRestaurant Load (0.5ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering restaurants/show.erb within layouts/application
+  Rendered restaurants/show.erb within layouts/application (1.6ms)
+Completed 200 OK in 85ms (Views: 80.4ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/restaurants/4" for 127.0.0.1 at 2016-11-15 10:00:53 +0000
+Processing by RestaurantsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Q1C3P71Ms7hV5d2Jhs4FDJVWd/d5xVbvgGQ112EQMmIYwnRg/q5fjvmZTaG4mxYzNoOybSOxpbUpQ1MAQlfosQ==", "id"=>"4"}
+  [1m[36mRestaurant Load (0.5ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[31mDELETE FROM "restaurants" WHERE "restaurants"."id" = $1[0m  [["id", 4]]
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/restaurants
+Completed 302 Found in 10ms (ActiveRecord: 3.2ms)
+
+
+Started GET "/restaurants" for 127.0.0.1 at 2016-11-15 10:00:53 +0000
+Processing by RestaurantsController#index as HTML
+  Rendering restaurants/index.erb within layouts/application
+  [1m[35m (3.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "restaurants"[0m
+  [1m[36mRestaurant Load (0.7ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurants/index.erb within layouts/application (13.1ms)
+Completed 200 OK in 114ms (Views: 106.1ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/restaurants/5" for 127.0.0.1 at 2016-11-15 10:00:56 +0000
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mRestaurant Load (0.9ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering restaurants/show.erb within layouts/application
+  Rendered restaurants/show.erb within layouts/application (1.5ms)
+Completed 200 OK in 84ms (Views: 76.1ms | ActiveRecord: 0.9ms)
+
+
+Started DELETE "/restaurants/5" for 127.0.0.1 at 2016-11-15 10:00:57 +0000
+Processing by RestaurantsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"RtNR8k2v7FQSkGDYq6SjQgTtZqPFhNhRpk7HlCQcr2kdQZKtDk0AYr7s8PCV8bB9pzijOZ/wKwsPaaFDB1t1ug==", "id"=>"5"}
+  [1m[36mRestaurant Load (0.6ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.2ms)[0m  [1m[31mDELETE FROM "restaurants" WHERE "restaurants"."id" = $1[0m  [["id", 5]]
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/restaurants
+Completed 302 Found in 10ms (ActiveRecord: 3.8ms)
+
+
+Started GET "/restaurants" for 127.0.0.1 at 2016-11-15 10:00:57 +0000
+Processing by RestaurantsController#index as HTML
+  Rendering restaurants/index.erb within layouts/application
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "restaurants"[0m
+  [1m[36mRestaurant Load (0.5ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurants/index.erb within layouts/application (5.1ms)
+Completed 200 OK in 104ms (Views: 96.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/restaurants/6" for 127.0.0.1 at 2016-11-15 10:00:59 +0000
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mRestaurant Load (1.4ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering restaurants/show.erb within layouts/application
+  Rendered restaurants/show.erb within layouts/application (1.7ms)
+Completed 200 OK in 92ms (Views: 86.0ms | ActiveRecord: 1.4ms)
+
+
+Started DELETE "/restaurants/6" for 127.0.0.1 at 2016-11-15 10:01:01 +0000
+Processing by RestaurantsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"ynd9jL7ELvEb7UhIeVumAHGuNujVHa7qq5J63oEwsxmR5b7T/SbCx7eR2GBHDrU/0nvzco9pXbACtRwJondpyg==", "id"=>"6"}
+  [1m[36mRestaurant Load (0.5ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[31mDELETE FROM "restaurants" WHERE "restaurants"."id" = $1[0m  [["id", 6]]
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/restaurants
+Completed 302 Found in 11ms (ActiveRecord: 3.5ms)
+
+
+Started GET "/restaurants" for 127.0.0.1 at 2016-11-15 10:01:01 +0000
+Processing by RestaurantsController#index as HTML
+  Rendering restaurants/index.erb within layouts/application
+  [1m[35m (3.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "restaurants"[0m
+  [1m[36mRestaurant Load (0.9ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurants/index.erb within layouts/application (16.1ms)
+Completed 200 OK in 140ms (Views: 132.3ms | ActiveRecord: 4.4ms)
+
+
