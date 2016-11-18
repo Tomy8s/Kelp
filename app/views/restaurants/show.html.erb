@@ -1,4 +1,12 @@
-<h1><%= @restaurant.name %> <small><%= @restaurant.rating.to_s[-1] == '0'? @restaurant.rating.to_i : @restaurant.rating.round(1)%>/5</small></h1>
+<h1><%= @restaurant.name %>
+  <small>
+    <% if @restaurant.rating.nil? %>
+      no reviews
+    <% else %>
+      <%= @restaurant.rating.to_s[-1] == '0'? @restaurant.rating.to_i : @restaurant.rating.round(1)%>/5
+    <% end %>
+  </small>
+</h1>
 <p><%= @restaurant.description %></p>
 <% @restaurant.reviews.each do |review |%>
   <div class="review">

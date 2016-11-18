@@ -55,7 +55,7 @@ feature 'restaurants' do
     let!(:kfc){ Restaurant.create(name:'KFC') }
 
     scenario 'lets a user view a restaurant' do
-     visit '/restaurants'
+     visit '/'
      click_link 'KFC'
      expect(page).to have_content 'KFC'
      expect(current_path).to eq "/restaurants/#{kfc.id}"
@@ -68,6 +68,7 @@ feature 'restaurants' do
 
     scenario 'let user edit a restaurant' do
       sign_in
+      click_link 'Nandos'
       click_link 'Edit Nandos'
       fill_in 'Name', with: 'Nandooos'
       fill_in 'Description', with: 'grilled cat'
@@ -79,6 +80,7 @@ feature 'restaurants' do
 
     scenario 'users must be signed in to edit a restaurant' do
       visit '/'
+      click_link 'Nandos'
       click_link 'Edit Nandos'
       expect(page).to have_content 'You need to sign in or sign up before continuing.'
     end
@@ -88,6 +90,7 @@ feature 'restaurants' do
     before { Restaurant.create name: 'KFC', description: 'Deep fried goodness' }
     scenario 'removes a restaurant when a user clicks a delete link' do
       sign_in
+      click_link 'KFC'
       click_link 'Delete KFC'
       expect(page).not_to have_content 'KFC'
       expect(page).to have_content 'Restaurant deleted successfully'
@@ -95,6 +98,7 @@ feature 'restaurants' do
 
     scenario 'users must be signed in to delete a restaurant' do
       visit '/'
+      click_link 'KFC'
       click_link 'Delete KFC'
       expect(page).to have_content 'You need to sign in or sign up before continuing.'
     end
