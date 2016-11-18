@@ -1,6 +1,14 @@
 <% if @restaurants.all.any? %>
   <% @restaurants.all.each do |restaurant| %>
-    <h3><%= link_to restaurant.name, restaurant_path(restaurant)%></h3>
+    <h3><%= link_to restaurant.name, restaurant_path(restaurant)%>
+      <small>
+        <% if restaurant.rating.nil? %>
+          no reviews
+        <% else %>
+          <%= restaurant.rating.to_s[-1] == '0'? restaurant.rating.to_i : restaurant.rating.round(1)%>/5
+        <% end %>
+      </small>
+    </h3>
     <p><%= restaurant.description %></p>
   <% end %>
 <% else %>
